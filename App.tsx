@@ -1,10 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
@@ -76,6 +69,14 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
+          <Section title="React Native Continuous Integration">
+            This repository provides a comprehensive guide and configurations
+            for setting up continuous integration and continuous deployment
+            (CI/CD) pipelines specifically tailored for React Native
+            applications. By leveraging tools like Husky, lint-staged, Jenkins,
+            and SonarQube, you can ensure fast, reliable, and automated builds,
+            testing, and deployment for your React Native projects.
+          </Section>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
