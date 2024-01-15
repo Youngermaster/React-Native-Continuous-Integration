@@ -36,10 +36,9 @@ This repository aims to provide a step-by-step guide to setting up an efficient 
 
    ```json
    {
-     "husky": {
-       "hooks": {
-         "pre-commit": "lint-staged"
-       }
+     "scripts": {
+       ...
+       "prepare": "husky install"
      }
    }
    ```
@@ -56,14 +55,11 @@ This repository aims to provide a step-by-step guide to setting up an efficient 
 
    ```json
    {
-     "lint-staged": {
-       "*.{js,jsx}": [
-         "eslint --fix",
-         "git add"
-       ]
-     }
+     "**/*.{js,jsx,ts,tsx}": ["eslint"]
    }
    ```
+
+3. Add the `eslint` config running `npx eslint --init` and select your desired configuration, or copy the content of `.eslintrc.js` from this project to your project.
 
 ### Jenkins
 
